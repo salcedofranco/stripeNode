@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <h3>Termotanque Solar</h2>
+            <img src="/termotanque-solar.jpg" alt="imagen-termotanque" class="card-img-top">
+            <div class="card-body">
+                <h2>$ 500 usd</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consectetur deleniti! Doloremque, fugiat quo! Quisquam ut repellat blanditiis maiores dolor aspernatur commodi nobis consectetur, dignissimos, totam</p>
+            </div>
+            <div class="card-footer">
+                <form action="/checkout" method="POST">
+                    <script
+                        src="https://checkout.stripe.com/checkout.js"
+                        class="stripe-button"
+                        data-key="pk_test_51HAdTXJWYHZivIgxIv3Xs7etKx34wuc2AdieQB1PYHwMRZGvQuuQfly06KULIhC6C1WqgrOMVPuh8yIBM0EaNIjU00nJeaxSXO"
+                        data-amount="{{ORDER_AMOUNT}}"
+                        data-currency="usd">
+                    </script>
+                    <script>
+                        document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                    </script>
+                
+                    <button class="btn btn-success btn-block">
+                        Comprar<i class="fas fa-shopping-cart"></i>
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    
+</div>
